@@ -6,7 +6,7 @@ The WordPress Foundation 6 Developer Framework is meant to be a starting point f
 
 ### Setup
 
--   `git clone https://github.com/Blake-C/wp-foundation-six.git your-project-name`
+-   `git clone https://github.com/Blake-C/utsa-wp-bootstrap-5.git your-project-name`
 -   `cd your-project-name`
 -   `rm -rf .git`
 -   `git init && git add -A`
@@ -26,7 +26,7 @@ From here you have two options, auto or manual.
 
 -   `composer install`
 -   `composer update`
--   `cd wp-content/themes/wp-foundation-six/`
+-   `cd wp-content/themes/utsa-wp-bootstrap-5/`
 -   `npm install`
 -   `gulp`
 
@@ -45,6 +45,6 @@ From here you have two options, auto or manual.
 
 ## Project Documentation
 
-[https://blake-c.github.io/wp-foundation-six/](https://blake-c.github.io/wp-foundation-six/)
+[https://blake-c.github.io/utsa-wp-bootstrap-5/](https://blake-c.github.io/utsa-wp-bootstrap-5/)
 
-Checkout the [changelog](https://github.com/Blake-C/wp-foundation-six/blob/master/CHANGELOG.md) for details on recent updates.
+Checkout the [changelog](https://github.com/Blake-C/utsa-wp-bootstrap-5/blob/master/CHANGELOG.md) for details on recent updates.

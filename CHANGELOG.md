@@ -20,11 +20,11 @@ All notable changes to this project will be documented in this file.
 
 -   Moved stylelint config out of package.json and into .stylelintrc
 -   Removed all third party plugins for WordPress from composer.json
--   Fixed wp-foundation-six plugin documentation notes
+-   Fixed utsa-wp-bootstrap-5 plugin documentation notes
 -   Changed prettier width to 120 and added prettierrc to root directory
 -   Updated node modules
 -   Updated composer packages
--   Updated wp-foundation-six-nginx from v2.0.0 to v2.0.1
+-   Updated utsa-wp-bootstrap-5-nginx from v2.0.0 to v2.0.1
     -   Added timeouts
 
 ### Added
@@ -43,11 +43,11 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
--   Updated wp-foundation-six-php from v3.0.0 to v4.1.0
+-   Updated utsa-wp-bootstrap-5-php from v3.0.0 to v4.1.0
     -   Updated php from v7.3 to v7.4.6
     -   Updated xdebug from v2.7.0 to v2.9.6
 -   Updated mariadb from v10.3.9 to v10.4.13
--   Updated wp-foundation-six-nginx from v1.0.0 to v2.0.0
+-   Updated utsa-wp-bootstrap-5-nginx from v1.0.0 to v2.0.0
     -   Updated nginx from 1.14.0-alpine to 1.17.8-alpine
 -   Updated general-cli from v2.0.0 to v3.1.1
     -   Added automake to general-cli container so that gifsicle could build from source and run gulp images task
@@ -107,7 +107,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
--   Updated wp-foundation-six-php to v3.0.0
+-   Updated utsa-wp-bootstrap-5-php to v3.0.0
     -   Updated PHP from v7.2 to v7.3 [release notes](http://php.net/releases/7_3_0.php)
     -   Updated xDebug to v2.7.0 [release notes](https://xdebug.org/updates.php)
     -   Reference the [PHP end of life chart](http://php.net/supported-versions.php)
@@ -171,8 +171,8 @@ All notable changes to this project will be documented in this file.
 -   Updated wp-coding-standards/wpcs to 1.1.0
 -   Updated core composer packages
 -   Updated digitalblake/general-cli to 0.3.0
--   Updated digitalblake/wp-foundation-six-php to 2.1.1
--   Updated digitalblake/wp-foundation-six-nginx to 1.0.0
+-   Updated digitalblake/utsa-wp-bootstrap-5-php to 2.1.1
+-   Updated digitalblake/utsa-wp-bootstrap-5-nginx to 1.0.0
 -   Updated digitalblake/general-cli to 1.0.0
 -   Updated theme npm modules
 -   Updated gulp from v3 to v4
@@ -187,7 +187,7 @@ All notable changes to this project will be documented in this file.
 -   Added phpcs and phpcbf to serve, watch, and build gulp tasks
 -   Added NGINX support for SSL and HTTP2
 -   Added gulp serve --https argument
--   Added ldap php module to wp-foundation-six-php docker image
+-   Added ldap php module to utsa-wp-bootstrap-5-php docker image
 
 ## [5.1.5] - 2018-10-01
 
@@ -265,7 +265,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
--   Updated wp-foundation-six-php:1.0.0 to wp-foundation-six-php:2.0.0
+-   Updated utsa-wp-bootstrap-5-php:1.0.0 to utsa-wp-bootstrap-5-php:2.0.0
 -   Updated mariadb:10.1.20 to mariadb:10.3.9
 -   Updated composer packages
 -   Cleaned up formatting of wp-config.php file

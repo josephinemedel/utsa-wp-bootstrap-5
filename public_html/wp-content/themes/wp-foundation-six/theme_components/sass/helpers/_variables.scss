@@ -1,5 +1,18 @@
 /* Colors */
-$accent-blue: rgb(0, 114, 188);
-$accent-1: rgb(244, 244, 244);
+$utsa-blue: #0c2340;
+$utsa-web-orange: #d3430d; //use web-orange when needing to pass contrast  with white text
+$utsa-brand-orange: #f15a22;
+
+$utsa-steal-blue: #495a70;
+$utsa-steal-blue-light: #dbdee3;
+
+$primary: $utsa-blue;
+$secondary: $utsa-web-orange;
+$white: #fff;
+
+$dark-gray: #a9a9a9;
+$medium-gray: #939799;
+$light-gray: #d3d3d3;
 
 /* Fonts */
+$code-font-family: mono;

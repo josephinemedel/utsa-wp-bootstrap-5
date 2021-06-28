@@ -7,7 +7,7 @@ services:
         tty: true
 
     nginx:
-        image: digitalblake/wp-foundation-six-nginx:2.1.0
+        image: digitalblake/utsa-wp-bootstrap-5-nginx:2.1.0
         volumes:
             - ./:/var/www/
         ports:
@@ -18,7 +18,7 @@ services:
             - php
 
     php:
-        image: digitalblake/wp-foundation-six-php:4.1.0
+        image: digitalblake/utsa-wp-bootstrap-5-php:4.1.0
         volumes:
             - ./:/var/www/
             - ./php/php.ini:/usr/local/etc/php/php.ini

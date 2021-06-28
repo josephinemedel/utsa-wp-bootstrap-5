@@ -12,15 +12,15 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 
 	<?php
-		/**
-		 * Use to prefech dns
-		 * https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
-		 *
-		 * Ex:
-		 * echo '<meta http-equiv="x-dns-prefetch-control" content="on">';
-		 * echo '<link rel="dns-prefetch" href="//use.typekit.net">';
-		 * echo '<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">';
-		 */
+	/**
+	 * Use to prefech dns
+	 * https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
+	 *
+	 * Ex:
+	 * echo '<meta http-equiv="x-dns-prefetch-control" content="on">';
+	 * echo '<link rel="dns-prefetch" href="//use.typekit.net">';
+	 * echo '<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">';
+	 */
 	?>
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -49,7 +49,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<a class="skip-link show-for-sr" href="#content"><?php echo esc_html_x( 'Skip to content', 'Link to jump to div with main content', 'wp_foundation_six' ); ?></a>
+	<a class="skip-link btn btn-primary w-100 visually-hidden-focusable" href="#content"><?php echo esc_html_x( 'Skip to content', 'Link to jump to div with main content', 'wp_foundation_six' ); ?></a>
 
 	<!--[if lt IE 9]><p class=chromeframe>Your browser is <em>not</em> supported. <a href="http://browsehappy.com/">Upgrade to a different browser</a> to experience this site.</p><![endif]-->
 
@@ -62,35 +62,54 @@
 
 
 	<?php if ( has_nav_menu( 'primary' ) ) : ?>
-		<div class="row columns" id="main_menu">
-			<?php
-			$wpfs_blog_name = get_bloginfo( 'name' ) ? '<li class="menu-text">' . get_bloginfo( 'name' ) . '</li>' : '';
 
-			/**
-			 * Custom menu
-			 *
-			 * @link https://codex.wordpress.org/Function_Reference/wp_nav_menu
-			*/
-			$wpfs_menu_args = array(
-				'theme_location'  => 'primary',
-				'menu'            => '',
-				'container'       => 'false',
-				'container_class' => '',
-				'container_id'    => '',
-				'menu_class'      => 'main-menu',
-				'menu_id'         => '',
-				'echo'            => true,
-				'fallback_cb'     => 'wp_page_menu',
-				'before'          => '',
-				'after'           => '',
-				'link_before'     => '',
-				'link_after'      => '',
-				'items_wrap'      => '<ul id="%1$s" class="%2$s">' . $wpfs_blog_name . '%3$s</ul>',
-				'depth'           => 0,
-				'walker'          => '',
-			);
+		<div class="row g-0" id="main_menu">
+			<div class="col">
 
-			wp_nav_menu( $wpfs_menu_args );
-			?>
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">Navbar</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+
+							<?php
+							$wpfs_blog_name = get_bloginfo( 'name' ) ? '<li class="navbar-brand">' . get_bloginfo( 'name' ) . '</li>' : '';
+
+							/**
+							* Custom menu
+							*
+							* @link https://codex.wordpress.org/Function_Reference/wp_nav_menu
+							*/
+							$wpfs_menu_args = array(
+								'theme_location'  => 'primary',
+								'menu'            => '',
+								'container'       => 'false',
+								'container_class' => '',
+								'container_id'    => '',
+								'menu_class'      => 'navbar-nav',
+								'menu_id'         => '',
+								'echo'            => true,
+								'fallback_cb'     => 'wp_page_menu',
+								'before'          => '',
+								'after'           => '',
+								'link_before'     => '',
+								'link_after'      => '',
+								'items_wrap'      => '<ul id="%1$s" class="%2$s">' . $wpfs_blog_name . '%3$s</ul>',
+								'depth'           => 0,
+								'walker'          => '',
+							);
+
+							wp_nav_menu( $wpfs_menu_args );
+							?>
+
+						</div>
+					</div>
+				</nav>
+			</div>
+
 		</div>
+
+
 	<?php endif; ?>

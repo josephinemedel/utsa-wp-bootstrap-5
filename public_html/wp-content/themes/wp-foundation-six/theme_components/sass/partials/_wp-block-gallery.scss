@@ -5,7 +5,7 @@
 	&.alignleft {
 		margin: 0 16px 16px 0;
 
-		@include breakpoint(small only) {
+		@include media-breakpoint-only(sm) {
 			margin: 0 0 16px 0;
 			max-width: 100%;
 		}
@@ -14,7 +14,7 @@
 	&.alignright {
 		margin: 0 0 16px 16px;
 
-		@include breakpoint(small only) {
+		@include media-breakpoint-only(sm) {
 			margin: 0 0 16px 0;
 			max-width: 100%;
 		}

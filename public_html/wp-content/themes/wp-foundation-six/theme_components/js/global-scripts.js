@@ -1,7 +1,7 @@
-import $ from 'jquery'
-import 'jquery-migrate'
+// import $ from 'jquery'
+// import 'jquery-migrate'
 import './modules/_skip-link-focus-fix'
-import './modules/_foundation-scripts'
+import './modules/_bootstrap-scripts'
 
 import { detect } from 'detect-browser'
 

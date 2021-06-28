@@ -16,12 +16,12 @@ function reload(done) {
 function directory_list() {
 	const directory_list = {
 		theme_components: 'theme_components',
-		build_dir: '../wp-foundation-six-build',
+		build_dir: '../utsa-wp-bootstrap-5-build',
 		assets: 'assets',
 	}
 
 	if (argv.build) {
-		directory_list.assets = '../wp-foundation-six-build/assets'
+		directory_list.assets = '../utsa-wp-bootstrap-5-build/assets'
 	}
 
 	return directory_list

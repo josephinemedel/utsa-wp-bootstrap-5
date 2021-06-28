@@ -27,7 +27,7 @@ body {
 
 /* Foundation figure was coming out of the layout container */
 figure {
-	background: $accent-1;
+	background: $secondary;
 	margin: 0;
 	padding: 1em 20px;
 
@@ -44,7 +44,7 @@ figure {
 }
 
 /* Wordpress styles */
-@include breakpoint(medium) {
+@include media-breakpoint-up(md) {
 	.alignright {
 		float: right;
 		margin: 0 0 0 16px;
@@ -69,13 +69,13 @@ figure {
 }
 
 pre {
-	background-color: $code-background;
-	border: $code-border;
-	color: $code-color;
+	background-color: lighten($primary, 50%);
+	border: lighten($primary, 15%);
+	color: $primary;
 	font-family: $code-font-family;
-	font-weight: $code-font-weight;
+	font-weight: 400;
 	margin-bottom: 16px;
-	padding: $code-padding;
+	padding: 1rem;
 	white-space: pre-wrap;
 }
 
@@ -100,7 +100,7 @@ pre {
 }
 
 .screen-reader-text {
-	@include element-invisible;
+	@include visually-hidden-focusable;
 }
 
 /* Callout */

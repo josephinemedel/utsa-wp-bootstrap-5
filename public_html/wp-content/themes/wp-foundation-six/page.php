@@ -18,7 +18,7 @@ get_header(); ?>
 
 	<div class="row">
 
-		<main class="medium-8 columns" id="content">
+		<main class="col-sm-12" id="content">
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>
 

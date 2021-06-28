@@ -16,20 +16,22 @@ get_header(); ?>
 
 	<?php wp_foundation_six_dev_helper( pathinfo( __FILE__, PATHINFO_FILENAME ) ); ?>
 
-	<div class="row">
+	<div class="container">
+		<div class="row">
 
-		<main class="medium-8 columns" id="content">
-			<?php while ( have_posts() ) : ?>
-				<?php the_post(); ?>
+			<main class="col-sm-12" id="content">
+				<?php while ( have_posts() ) : ?>
+					<?php the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; ?>
-			<!-- End of the loop. -->
-		</main>
+				<?php endwhile; ?>
+				<!-- End of the loop. -->
+			</main>
 
-		<?php get_sidebar(); ?>
-
+		</div>
 	</div>
+
+
 
 <?php get_footer(); ?>

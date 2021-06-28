@@ -2,7 +2,7 @@
 /**
  * Plugin Name:  WP Foundation Six
  * Description:  Custom features and functionality that needs to persist outside of the sites theme.
- * Plugin URI:   https://github.com/Blake-C/wp-foundation-six
+ * Plugin URI:   https://github.com/Blake-C/utsa-wp-bootstrap-5
  * Version:      0.0.0
  * Author:
  * Author URI:

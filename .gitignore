@@ -10,14 +10,14 @@ production-config.php
 
 !/public_html/wp-content/themes
 !/public_html/wp-content/themes/*
-!/public_html/wp-content/themes/wp-foundation-six
-!/public_html/wp-content/themes/wp-foundation-six/*
+!/public_html/wp-content/themes/utsa-wp-bootstrap-5
+!/public_html/wp-content/themes/utsa-wp-bootstrap-5/*
 !/public_html/wp-content/mu-plugins/index.php
 !/public_html/wp-content/plugins/index.php
-!/public_html/wp-content/plugins/wp-foundation-six
+!/public_html/wp-content/plugins/utsa-wp-bootstrap-5
 
-/public_html/wp-content/themes/wp-foundation-six/assets
-/public_html/wp-content/themes/wp-foundation-six-build
+/public_html/wp-content/themes/utsa-wp-bootstrap-5/assets
+/public_html/wp-content/themes/utsa-wp-bootstrap-5-build
 
 ### Docker ###
 docker_php_error_log
@@ -94,3 +94,4 @@ node_modules
 npm-debug.log
 object-cache.php
 .idea
+public_html/wp-content/themes/twentytwentyone

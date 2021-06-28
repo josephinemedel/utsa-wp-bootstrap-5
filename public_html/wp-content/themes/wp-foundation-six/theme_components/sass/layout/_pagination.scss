@@ -1,6 +1,6 @@
 .pagination {
 	ul {
-		background-color: $accent-1;
+		background-color: $secondary;
 		border-radius: 3px;
 		font-size: 0;
 		margin: 10px 0;
@@ -21,7 +21,7 @@
 
 	a,
 	.current {
-		background-color: $accent-blue;
+		background-color: $primary;
 		border-radius: 3px;
 		color: $white;
 		display: block;
@@ -35,13 +35,13 @@
 
 		&:hover,
 		&:focus {
-			background-color: darken($accent-blue, 10%);
+			background-color: darken($primary, 10%);
 			color: $white;
 		}
 	}
 
 	.current {
-		background-color: darken($accent-1, 10%);
+		background-color: darken($secondary, 10%);
 		color: $black;
 	}
 }

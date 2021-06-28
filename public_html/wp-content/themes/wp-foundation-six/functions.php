@@ -150,16 +150,16 @@ if ( ! function_exists( 'wp_foundation_six_scripts' ) ) {
 		$modernizr      = get_template_directory_uri() . '/assets/js/vendors/modernizr.js';
 
 		/* Import CSS (Sass files are in the theme-components folder) */
-		wp_enqueue_style( 'wp-foundation-six-style', $global_styles, array(), wpfs_cache_bust( $global_styles ) );
+		wp_enqueue_style( 'utsa-wp-bootstrap-5-style', $global_styles, array(), wpfs_cache_bust( $global_styles ) );
 
 		/* Register Modern jQuery */
 		wp_deregister_script( 'jquery' );
-		wp_register_script( 'jquery', $modern_jquery, array( 'wp-foundation-six-modernizr' ), wpfs_cache_bust( $modern_jquery ), true );
+		wp_register_script( 'jquery', $modern_jquery, array( 'utsa-wp-bootstrap-5-modernizr' ), wpfs_cache_bust( $modern_jquery ), true );
 		wp_enqueue_script( 'jquery' );
 
 		/* Import Scripts (Keep to a minimum or import into global-scripts.js file) */
-		wp_enqueue_script( 'wp-foundation-six-global', $global_scripts, array( 'jquery', 'wp-foundation-six-modernizr' ), wpfs_cache_bust( $global_scripts ), true );
-		wp_enqueue_script( 'wp-foundation-six-modernizr', $modernizr, array(), wpfs_cache_bust( $modernizr ), true );
+		wp_enqueue_script( 'utsa-wp-bootstrap-5-global', $global_scripts, array( 'jquery', 'utsa-wp-bootstrap-5-modernizr' ), wpfs_cache_bust( $global_scripts ), true );
+		wp_enqueue_script( 'utsa-wp-bootstrap-5-modernizr', $modernizr, array(), wpfs_cache_bust( $modernizr ), true );
 
 		/**
 		 * Conditionally add scripts and styles to pages with template tags
@@ -169,7 +169,7 @@ if ( ! function_exists( 'wp_foundation_six_scripts' ) ) {
 		 * Ex:
 		 * if ( is_front_page() ) {
 		 *     $scripts_home = get_template_directory_uri() . '/assets/js/scripts-home-min.js';
-		 *     wp_enqueue_script( 'wp-foundation-six-home-scripts', $scripts_home, array('jquery'), wpfs_cache_bust( $scripts_home ), true );
+		 *     wp_enqueue_script( 'utsa-wp-bootstrap-5-home-scripts', $scripts_home, array('jquery'), wpfs_cache_bust( $scripts_home ), true );
 		 * }
 		 */
 	}
